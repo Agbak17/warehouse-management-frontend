@@ -1,16 +1,126 @@
-# React + Vite
+# Warehouse Management System Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend application for a warehouse management system built with React, React Router, and modern JavaScript tooling.
 
-Currently, two official plugins are available:
+The application provides an interface for managing products, suppliers, orders, inventory batches, and stock movements through authenticated workflows connected to a backend API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend Application: https://warehouse-management-frontend-eta.vercel.app
 
-## Expanding the ESLint configuration
+Frontend Repository: https://github.com/Agbak17/warehouse-management-frontend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Backend Repository: https://github.com/Agbak17/warehouse-management-backend
+
+---
+
+## Screenshots
+
+### Dashboard
+
+![Dashboard](assets/dashboard.png)
+
+### Product Management
+
+![Products](assets/products.png)
+
+### Stock Movements Management
+
+![Inventory](assets/stock-movements.png)
+
+### Authentication
+
+![Authentication](assets/auth.png)
+
+---
+
+## Features
+
+- JWT-based authentication
+- Protected frontend routes
+- Product and inventory management
+- Batch-level stock tracking
+- Supplier and order management
+- REST API integration
+- Responsive user interface
+- Client-side routing with React Router
+
+---
+
+## Tech Stack
+
+- React
+- React Router
+- JavaScript
+- Axios
+- CSS
+- Vercel
+
+---
+
+## Architecture
+
+- React frontend communicates with backend REST APIs
+- JWT authentication used to secure protected pages
+- React Router manages client-side navigation
+- Axios handles API requests and authentication headers
+- Frontend deployed on Vercel
+- Backend API hosted separately on Render
+
+---
+
+## Local Development Setup
+
+```bash
+git clone https://github.com/Agbak17/warehouse-management-frontend.git
+cd warehouse-management-frontend
+npm install
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+VITE_API_URL=your_backend_api_url
+```
+
+---
+
+## Run Locally
+
+```bash
+npm run dev
+```
+
+---
+
+## Challenges & Lessons Learned
+
+One of the main challenges during development was integrating frontend authentication with protected backend API routes using JWT tokens.
+
+Additional challenges included:
+
+- Managing authenticated client-side routing
+- Handling API communication between Vercel and Render deployments
+- Managing frontend state across inventory workflows
+- Debugging production deployment and environment configuration issues
+- Building responsive interfaces for warehouse operations
+
+This project provided hands-on experience with frontend architecture, API integration, authentication workflows, deployment, and real-world debugging.
+
+---
+
+## Future Improvements
+
+- Improved dashboard analytics
+- Role-based frontend permissions
+- Enhanced filtering and search functionality
+- Real-time inventory updates
+- Dark mode support
+- Improved mobile responsiveness
+- Automated frontend testing
